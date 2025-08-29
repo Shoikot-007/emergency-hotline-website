@@ -8,17 +8,78 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
-    <header>
-      <h1 class="hind-madurai-font text-3xl">Hello World</h1>
-      <p class="roboto-font">Hello world</p>
-      <span class="inter-font">Hello world</span>
+  <body class="bg-white">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center py-4 sm:py-0 sm:h-16 space-y-3 sm:space-y-0">
+          <!-- Left side - Emergency Service Logo -->
+          <div class="flex items-center justify-center sm:justify-start space-x-3">
+            <img
+              src="assets/logo.png"
+              alt="Emergency Service"
+              class="w-10 h-10"
+            />
+            <div>
+              <h1 class="hind-madurai-font text-xl font-bold text-[#006747]">
+                Emergency
+              </h1>
+              <p class="hind-madurai-font text-xl font-bold text-[#006747] -mt-1">Service</p>
+            </div>
+          </div>
+
+          <!-- Right side - Info displays -->
+          <div class="flex items-center justify-center space-x-3">
+
+            <div class="bg-green-50 px-3 py-2 rounded-full flex items-center justify-center space-x-2 w-20">
+              <span class="inter-font text-lg font-bold text-gray-900">0</span>
+              <img src="assets/heart.png" alt="Favorites" class="w-5 h-5" />
+            </div>
+
+            <div class="bg-yellow-50 px-3 py-2 rounded-full flex items-center justify-center space-x-2 w-20">
+              <span class="inter-font text-lg font-bold text-gray-900">100</span>
+              <img src="assets/coin.png" alt="Points" class="w-5 h-5" />
+            </div>
+
+            <div class="bg-green-600 px-3 py-2 rounded-full flex items-center justify-center space-x-2 w-20">
+              <span class="inter-font text-sm font-medium text-white">2 Copy</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
-    <script></script>
+
+    <!-- Banner Section -->
+    <section class="bg-[linear-gradient(270deg,#013223_0%,#006747_50%,#013223_100%)] py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <div class="flex justify-center mb-6">
+          <div
+            class="w-20 h-20 bg-transparent rounded-full flex items-center justify-center"
+          >
+            <img
+              src="assets/logo-dark.png"
+              alt="Government of Bangladesh"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+
+        <h1
+          class="hind-madurai-font text-4xl md:text-5xl font-bold text-white mb-4"
+        >
+          Emergency Service Directory
+        </h1>
+
+        <p
+          class="hind-madurai-font text-lg text-white max-w-5xl mx-auto leading-relaxed"
+        >
+          Government Emergency Services at Your Fingertip – A Project by Government of the People's Republic of Bangladesh
+        </p>
+      </div>
+    </section>
     <script src="scripts/script.js"></script>
   </body>
 </html>
