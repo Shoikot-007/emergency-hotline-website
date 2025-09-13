@@ -16,14 +16,21 @@
   transition: all 0.3s ease;
 }
 
-.heart-btn:hover .heart-icon {
-  fill: #ef4444;
-  stroke: #ef4444;
+@media (hover: hover) {
+  .heart-btn:hover .heart-icon {
+    fill: #ef4444;
+    stroke: #ef4444;
+  }
 }
 
 .heart-btn.favorited .heart-icon {
-  fill: #ef4444;
-  stroke: #ef4444;
+  fill: #ef4444 !important;
+  stroke: #ef4444 !important;
+}
+
+.heart-btn:not(.favorited) .heart-icon {
+  fill: none;
+  stroke: #9ca3af;
 }
 
 .copy-btn:hover .copy-icon,
