@@ -1,7 +1,7 @@
 // Initialize counters
 let favoritesCount = 0;
 let coinsCount = 100;
-let copyCount = 2;
+let copyCount = 0;
 let callHistory = [];
 
 // Update display counters
