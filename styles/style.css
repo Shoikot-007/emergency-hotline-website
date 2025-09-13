@@ -11,3 +11,22 @@
 .inter-font {
   font-family: "Inter", sans-serif;
 }
+
+.heart-btn {
+  transition: all 0.3s ease;
+}
+
+.heart-btn:hover .heart-icon {
+  fill: #ef4444;
+  stroke: #ef4444;
+}
+
+.heart-btn.favorited .heart-icon {
+  fill: #ef4444;
+  stroke: #ef4444;
+}
+
+.copy-btn:hover .copy-icon,
+.call-btn:hover .call-icon {
+  transform: scale(1.1);
+}

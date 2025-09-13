@@ -4,43 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service Directory</title>
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
-
-      .hind-madurai-font {
-        font-family: "Hind Madurai", sans-serif;
-      }
-
-      .inter-font {
-        font-family: "Inter", sans-serif;
-      }
-
-      .heart-btn {
-        transition: all 0.3s ease;
-      }
-
-      .heart-btn:hover .heart-icon {
-        fill: #ef4444;
-        stroke: #ef4444;
-      }
-
-      .heart-btn.favorited .heart-icon {
-        fill: #ef4444;
-        stroke: #ef4444;
-      }
-
-      .copy-btn:hover .copy-icon,
-      .call-btn:hover .call-icon {
-        transform: scale(1.1);
-      }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body class="bg-white">
     <header class="bg-white shadow-sm border-b border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div
           class="flex flex-col sm:flex-row sm:justify-between sm:items-center py-4 sm:py-0 sm:h-16 space-y-3 sm:space-y-0"
         >
@@ -124,7 +93,7 @@
       </section>
 
       <section class="py-16" style="background-color: rgb(245, 255, 246)">
-        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Grid Container: 4 columns, 3 rows -->
           <div
             class="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:grid-rows-3 min-h-[600px]"
@@ -298,7 +267,7 @@
                   class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center"
                 >
                   <img
-                    src="assets/emergency.png"
+                    src="assets/ambulance.png"
                     alt="Fire Service"
                     class="w-6 h-6"
                   />
@@ -985,5 +954,7 @@
         </div>
       </section>
     </main>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
